@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loginform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="saira">
+    
+    <div class="form-box">
+    <div class="button-box">
+        <div id="btn"></div>
+        <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+        <button type="button" class="toggle-btn" onclick="register()">Register</button>
+    </div>
+    <div class="social-icons">
+        <img src="images/fb.png">
+        <img src="images/tw.png">
+        <img src="images/gp.png"> 
+    </div>
+    <from  id="Login"class="input-group">
+        <input type="text" class="input-field" placeholder="User Id" required>
+        <input type="text" class="input-field" placeholder="Enter Password" required>
+        <input type="checkbox" class="checkbox"><span>Remember Password</span>
+        <button type="submit" class="submit-btn">Log in</button>
+
+    </from>
+    <from id="Register"class="input-group">
+        
+        <input type="text" class="input-field" placeholder="User Id" required>
+        <input type="Email" class="input-field" placeholder="Email id" required>
+        <input type="text" class="input-field" placeholder="Enter Password" required>
+        <input type="checkbox" class="checkbox"><span>I agree to the terms & condition</span>
+        <button type="submit" class="submit-btn">Register</button>
+
+    </from>
+    </div>
+    </div>
+    <script>
+        var x = document.getElementById("Login");
+        var y = document.getElementById("Register");
+        var z = document.getElementById("btn");
+
+        function register(){
+            x.style.left = "-400px";
+            y.style.left ="50px";
+            z.style.left ="110px";
+
+        }
+        function login(){
+            x.style.left = "50px";
+            y.style.left ="450px";
+            z.style.left ="0";
+
+        }
+        
+
+    </script>
+</body>
+</html>
